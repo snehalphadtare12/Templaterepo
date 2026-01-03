@@ -6,7 +6,8 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/USERNAME/html-css-template.git'
+                    url: 'https://github.com/snehalphadtare12/Templaterepo.git
+'
             }
         }
 
