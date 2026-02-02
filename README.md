@@ -1,70 +1,69 @@
-# Template Repository 🚀
+# Templaterepo 📁
 
-This repository is a **starter template project** that can be reused to create new GitHub repositories with a predefined structure and configuration.
-
----
-
-## 📌 About This Repository
-
-This template repository is designed to:
-- Provide a basic project structure
-- Save time when starting new projects
-- Maintain consistent coding standards
-- Serve as a starter template for future projects
+A starter template repository containing basic project files and workflows.  
+This repo can be used as a template for any new project requiring a standard structure and CI/CD automation.
 
 ---
 
-## 📂 Repository Structure
+## 🧱 Project Contents
 
-Templaterepo/
-│
-├── README.md # Project documentation
-├── .gitignore # Files to ignore in Git
-├── src/ # Source code folder (if applicable)
-└── docs/ # Documentation files (optional)
+This repository currently includes:
 
-
----
-
-## ⚙️ How to Use This Template
-
-### 1️⃣ Create a New Repository from Template
-1. Go to this repository
-2. Click **Use this template**
-3. Enter new repository name
-4. Click **Create repository**
+- `index.html` — A basic HTML file
+- `Jenkinsfile` — CI/CD pipeline for Jenkins
+- `assets/` — Static assets (styles, images, etc.)
+- `vendor/` — Third-party libraries and code
 
 ---
 
-### 2️⃣ Clone the Repository
+## 🚀 Purpose
+
+This repository is set up to be used as a **template** for new projects.  
+It provides a basic structure, and you can customize it per your project needs.
+
+If you enable this as a GitHub Template Repository, you can use **"Use this template"** to generate new repos with all files and folders pre-populated. :contentReference[oaicite:1]{index=1}
+
+---
+
+## 📋 Features
+
+✔ Basic web project structure  
+✔ Jenkins CI/CD pipeline (configured with `Jenkinsfile`)  
+✔ Ready to expand for any project type
+
+---
+
+## 🛠 Setup & Usage
+
+### 1. Clone the Repository  
 ```bash
 git clone https://github.com/snehalphadtare12/Templaterepo.git
 cd Templaterepo
-🛠️ Technologies Used
-Git & GitHub
+2. Customize for Your Project
+Edit index.html
 
-Markdown
+Add your own scripts, styles, or application code
 
-(Add programming language if needed)
+Update or extend Jenkins pipeline
 
-🎯 Purpose
-This repository is created for:
+⚙️ Jenkins Integration
+This repo includes a sample Jenkinsfile for CI/CD automation:
 
-Practice projects
+pipeline {
+    agent any
 
-DevOps & development templates
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/snehalphadtare12/Templaterepo.git'
+            }
+        }
+        stage('Build / Test') {
+            steps {
+                echo 'Add your build or test commands here'
+            }
+        }
+    }
+}
+You can customize this pipeline based on your workflow.
 
-Learning GitHub workflow
-
-Quick project initialization
-
-🔮 Future Enhancements
-Add project boilerplate code
-
-Add CI/CD pipeline
-
-Add Docker & Kubernetes template
-
-Add project license and contribution guide
-
-👤 Author
